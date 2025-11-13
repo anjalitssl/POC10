@@ -25,8 +25,9 @@ pipeline {
                     ${SONAR_SCANNER_HOME}/bin/sonar-scanner \
                     -Dsonar.projectKey=poc10 \
                     -Dsonar.sources=src \
+                    -Dsonar.java.binaries=target/classes \
                     -Dsonar.host.url=http://localhost:9000 \
-                    -Dsonar.login=squ_a213a2faf4c32e6e45fd58efec581e7ac2ec9796
+                    -Dsonar.token=squ_a213a2faf4c32e6e45fd58efec581e7ac2ec9796
                 """
             }
         }
